@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: #00AA;
+  }
+  
+  .calculator-grid {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  
+    grid-template-areas: 
+ 
+        "number operator";
+
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 100px;
+    grid-gap: 5px;
+  }
+
+
+
+.number {
+    grid-area: number;
+}
+
+.operator {
+    grid-area: operator
+}
+
+.number {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.operator {
+    display: grid;
+}
